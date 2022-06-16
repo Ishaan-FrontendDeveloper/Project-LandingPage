@@ -59,7 +59,7 @@ img:hover{
 }
 /* :hover here is used to set the box-shadow to the follow values on mouse hover*/
 .wrapper{  
-    background:url(/images/pexels-anirudh-bharat-1721747.jpg);
+    background:url("https://lanceoflonginius.github.io/Project-LandingPage/images/pexels-anirudh-bharat-1721747.jpg");
     height:100vh;
     width:100vw;
     background-repeat:no-repeat;
