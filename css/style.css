@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Koulen&family=Oswald&family=Poppins&family=Rajdhani:wght@300&family=Source+Code+Pro:wght@500&display=swap');
+
+body{
+    margin:0;
+    padding:0 ;
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+    background:#fb8b24;
+}
+.header{
+    position:relative;
+    width:100%;
+    height:9vh;
+}
+.header,.links{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+   background: #904549;
+    color:#fb8b24;
+    padding:5px;
+
+}
+.header .head{
+    font-family:'Oswald',sans-serif;
+    font-weight:900;
+    padding:5px;
+    align-self:center;
+
+}
+.header .links{
+    list-style-type:none; 
+    align-items:center;
+    padding:5px;
+    font-family:'Oswald',sans-serif;
+    font-weight:500;
+    font-size:20px;
+    color:white;
+}
+.header:hover{
+    animation:text 2s linear infinite;
+    box-shadow:0 2px 4px rgba(0,0,0,0.2);
+
+
+}
+.head:hover{
+    font-style:oblique;
+}
+.container{
+    display:Flex;
+    flex-direction:column;
+    justify-content:space-between;
+    background:#fb8b24;
+    align-items:Center;
+    gap:10px;
+}
+img:hover{
+    box-shadow:0 2px 4px rgba(0,0,0,0.2);
+}
+/* :hover here is used to set the box-shadow to the follow values on mouse hover*/
+.wrapper{  
+    background:url(/images/pexels-anirudh-bharat-1721747.jpg);
+    height:100vh;
+    width:100vw;
+    background-repeat:no-repeat;
+    background-size:100%;
+    filter:blur(5px);   
+}
+
+ .intro{
+    background:transparent;
+    margin-top:9%;
+    font-size:28px;
+    display:Flex;
+    justify-content:center;
+    text-align:center;
+    align-items:Center;
+    font-weight:900;
+    position:absolute;
+    color:white;
+    word-wrap:break-word;
+    text-shadow:0 2px 4px rgba(0,0,0,1);
+}
+a{
+    text-decoration:none !important;
+    padding:5px;
+}
+a:visited{
+    background:#7FC29B;
+    color:#000;
+}
+a:active{
+    color:#D36582;
+}
+a:hover{
+    color:white;
+}
+@keyframes text{
+    0%,100%{
+        filter:hue-rotate(45deg);
+    }
+    25%{
+        filter:hue-rotate(60deg);
+    }
+    50%{
+        filter:hue-rotate(90deg);
+    }
+    75%{
+        filter:hue-rotate(180deg);
+    }
+}
+/*text keyframe for the text animation*/
+.major{
+    background:transparent;
+    box-shadow:0 2px 4px rgba(0,0,0,0.4);
+    text-align:Center;
+    align-self:center;
+    width:fit-content;
+    font-size:28px;
+    padding:50px;
+    word-spacing:2px;
+}
+.img_wrapper{
+   
+   height:50%;
+   background:#e36414;
+   display:flex;
+   flex-direction:row;
+   align-items:Center;
+   justify-content:center;
+   padding:20px;
+   border-radius:50px;
+   
+}
+
+img{
+    height:50vh;
+    width:40vw;
+    border-radius:50px;
+    padding:20px;
+}
+
+.quote{
+    width:100%;
+    height:15vh;
+    text-align:center;
+    font-style:oblique;
+    position:relative;
+    font-size:20px;
+    font-weight:700;
+    background: -webkit-linear-gradient(90deg,#9a031e,#904549,#D36582);
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    filter:blur(5px);
+
+}
+.quote:hover{
+    filter:blur(0);
+    animation:text 0.5s linear infinite;
+}
+.footer{
+    bottom:0;
+    position:fixed;
+    text-align:center;
+    background:#9a031e;
+    width:100%;
+    padding:5px;
+    font-family:'Koulen',fantasy;
+}
+.footer:hover{
+    text-shadow:0 2px 4px rgba(0,0,0,0.2);
+}

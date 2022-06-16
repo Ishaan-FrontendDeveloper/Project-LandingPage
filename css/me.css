@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Koulen&family=Oswald&family=Poppins&family=Rajdhani:wght@300&family=Source+Code+Pro:wght@500&display=swap');
+
+
+*{   
+     margin:0;
+    font-family:'Poppins',sans-serif;
+
+}
+@counter-style aemoji{
+    system:cyclic;
+  symbols: "\1F31D" "\1F333" "\1F338"; // unicode code point
+  suffix: "";
+
+}
+
+
+
+.container{
+    animation:coolor 2s linear infinite;
+    background:linear-gradient(120deg,#ACF39D,#E85F5C,#9CFFFA);
+    height:100vh;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    
+}
+a{
+    text-decoration:none;
+}
+ul{
+    list-style-type:aemoji;
+    margin:2%;
+}
+.plas{
+    background:#0e0e0e;
+    width:50vw;
+    height:45vh;
+    padding:10px;
+    color:white;
+    font-size:2em;
+    word-spacing:2px;
+    border-radius:50px;
+    text-align:center;
+}
+@keyframes coolor{
+    0%,100%{
+        filter:hue-rotate(45deg);
+    }
+    25%{
+        filter:hue-rotate(60deg);
+    }
+    50%{
+        filter:hue-rotate(90deg);
+    }
+    75%{
+        filter:hue-rotate(180deg);
+    }
+}
